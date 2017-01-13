@@ -1,0 +1,4 @@
+GenerateIndex.java - Main method requires directory path to read documents.txt and write index.txt
+SearchQueries.java - Main method requires path to index.txt. It takes input search string and does query expansion following the pseudo relevance feedback(PRF) technique as explained in HW4.
+TermPositions.java and DocCollectors.Java - are POJOs(java objects).
+Synonyms.java - If there are no matches even after PRF, synonym expansion technique is applied. Synonyms.java has details about it.

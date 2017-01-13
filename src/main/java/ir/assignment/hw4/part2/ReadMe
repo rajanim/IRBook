@@ -1,0 +1,20 @@
+1. GenerateIndex.java
+   Main method requires directory path to documents.txt and index.txt
+
+2. SearchQueries.java
+ - Requires to set directoryPath global variable  : path where documents.txt and index.txt exist.
+ - Input example:
+   a. nexus like love happy
+   b. asus repair
+   c. 0(touch screen) fix repair
+
+ - Output is file written to same directoryPath with name output.txt
+
+
+Tested queries
+
+battery
+screen
+speed
+
+
