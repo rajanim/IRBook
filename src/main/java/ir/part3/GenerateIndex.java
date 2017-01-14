@@ -1,4 +1,4 @@
-package ir.assignment.hw4.part2;
+package ir.part3;
 
 import org.lemurproject.kstem.KrovetzStemmer;
 
@@ -35,7 +35,7 @@ public class GenerateIndex {
             //Logging Level for debugging purpose
             LOGGER.setLevel(Level.INFO);
             LOGGER.info("Reading input documents.txt file located at" + directoryPath);
-            File file = new File(directoryPath + "documents.txt");
+            File file = new File(directoryPath + "part1_resource/documents.txt");
             LOGGER.info("Input file loaded");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             //Instance of current class to call methods.

@@ -1,4 +1,4 @@
-package ir.assignment.hw2;
+package ir.part2;
 
 /**
  * Created by rajanishivarajmaski1 on 9/27/16.
@@ -7,12 +7,12 @@ package ir.assignment.hw2;
  */
 
 
-public class DocCollector {
+public class Tuple_2 {
 
     int docId;
     double termScore;
 
-    public DocCollector(int docId, double termScore) {
+    public Tuple_2(int docId, double termScore) {
         this.docId = docId;
         this.termScore = termScore;
     }

@@ -1,17 +1,17 @@
-package ir.assignment.hw1;
+package ir.part1;
 
 /**
  * Created by rajanishivarajmaski1 on 9/8/16.
  * Java object to maintain term - docId pairs
  */
 
-public class Pairs {
+public class Tuple_2 {
 
     private String term;
 
     private int docId;
 
-    public Pairs(String term, int docId) {
+    public Tuple_2(String term, int docId) {
         this.term = term;
         this.docId = docId;
     }

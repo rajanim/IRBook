@@ -1,5 +1,6 @@
-package ir.assignment.hw2;
+package ir.part2;
 
+import ir.assignment.hw2.DocCollector;
 import org.lemurproject.kstem.KrovetzStemmer;
 
 import java.io.BufferedReader;

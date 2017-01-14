@@ -1,4 +1,4 @@
-package ir.assignment.hw4.part2;
+package ir.part3;
 
 import java.util.HashMap;
 

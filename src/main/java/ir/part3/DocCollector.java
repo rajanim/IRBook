@@ -1,4 +1,4 @@
-package ir.assignment.hw4.part2;
+package ir.part3;
 
 /**
  * Created by rajanishivarajmaski1 on 9/27/16.

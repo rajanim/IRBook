@@ -1,4 +1,4 @@
-package ir.assignment.others;
+package ir.part_x;
 
 import java.io.*;
 import java.util.HashMap;
@@ -27,10 +27,10 @@ public class TrecCalcAnswerType {
         // read test result file and extract answer-type and compare if its same as in gold truth file.
         //if it is same, score is 1 and otherwise zero. //write this to disc with [QryID] 0 [DocID] [Rank] [Score]
 
-        InputStream stream = getClass().getClassLoader().getResourceAsStream("test_answer_type.txt");
+        InputStream stream = getClass().getClassLoader().getResourceAsStream("part_x_resources/test_answer_type.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 
-        File fOut = new File("output-qrels.txt");
+        File fOut = new File("part_x_resources/output-qrels.txt");
         FileOutputStream fos = new FileOutputStream(fOut);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
 
@@ -85,7 +85,7 @@ public class TrecCalcAnswerType {
         InputStream stream = getClass().getClassLoader().getResourceAsStream("train_answer_type.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 
-        File fOut = new File("qrels.txt");
+        File fOut = new File("part_x_resources/qrels.txt");
         FileOutputStream fos = new FileOutputStream(fOut);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
 

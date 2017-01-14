@@ -1,4 +1,4 @@
-package ir.assignment.hw1;
+package ir.part1;
 
 import org.lemurproject.kstem.KrovetzStemmer;
 
@@ -12,7 +12,7 @@ import java.util.*;
  * Created by rajanishivarajmaski1 on 9/9/16.
  * Class to search conjunctive(AND) type queries with conjunctive algorithm.
  */
-public class SearchConjunctiveQueries {
+public class ConjunctiveSearch {
 
     static List<String> stopWords = Arrays.asList("the", "is", "at", "of", "on", "and", "a");
     //stemmer instance to analyse search terms
@@ -20,9 +20,11 @@ public class SearchConjunctiveQueries {
     //constants
     private static String directoryPath = "/Users/rajanishivarajmaski1/University/CSC849_Search/assignment1/";
 
-    /*
-    * Main method to initiate index file processing, search queries and write response to file
-    * */
+    /**
+     * Main method to initiate index file processing, search queries and write response to file
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
 
         //Reload indexes from file-system into memory as map data structure.
@@ -38,9 +40,12 @@ public class SearchConjunctiveQueries {
 
     }
 
-    /*
-    * Method to read index file and load the vocabulary posting lists to memory
-    * */
+    /**
+     * Method to read index file and load the vocabulary posting lists to memory
+     * @param file
+     * @return
+     * @throws IOException
+     */
     private static Map<String, LinkedList<Integer>> reLoadIndexesFromFileToMap(File file) throws IOException {
         Map<String, LinkedList<Integer>> map = new HashMap<>();
         BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -57,10 +62,11 @@ public class SearchConjunctiveQueries {
         }
         return map;
     }
-
-    /*
-    * Analyze term using kstem
-    * */
+    /**
+     * filter term using kstem
+     * @param term
+     * @return
+     */
     private static String analyzeTerm(String term) {
         String ret = term.toLowerCase();
         if (stopWords.contains(ret) || ret.isEmpty())
@@ -68,9 +74,12 @@ public class SearchConjunctiveQueries {
         return stemmer.stem(ret);
     }
 
-    /*
-    * Intersect algorithm implementation for conjunctive queries
-    * */
+    /**
+     * Intersect algorithm implementation for conjunctive queries 1.3
+     * @param p1
+     * @param p2
+     * @return
+     */
     private static String intersect(LinkedList<Integer> p1, LinkedList<Integer> p2) {
         Set<Integer> answerSet = new HashSet<>();
         if (p1 != null && p2 != null) {
@@ -93,23 +102,5 @@ public class SearchConjunctiveQueries {
     }
 
 
-  /*  private static String positionIntersects(LinkedList<Pairs> p1, LinkedList<Pairs> p2) {
-        Set<Integer> answerSet = new HashSet<>();
-        if (p1 != null && p2 != null) {
-            while (!p1.isEmpty() && !p2.isEmpty()) {
-                if (p1.peek().getDocId() == p2.peek().getDocId()) {
 
-                    answerSet.add(p1.pop());
-                } else if (p1.peek() < p2.peek()) {
-                    p1.pop();
-                } else {
-                    p2.pop();
-                }
-
-            }
-        }
-        if (answerSet.toString().isEmpty())
-            return "no match";
-        return answerSet.toString();
-    }*/
 }

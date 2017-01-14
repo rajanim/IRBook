@@ -1,4 +1,4 @@
-package ir.assignment.hw4.part1;
+package ir.part3;
 
 import org.jetbrains.annotations.TestOnly;
 
