@@ -6,15 +6,10 @@
  - Input example:
    a. nexus like love happy
    b. asus repair
-   c. 0(touch screen) fix repair
+   c. 2(laptop 15inch) fix repair
 
  - Output is file written to same directoryPath with name output.txt
 
 
-Tested queries
-
-battery
-screen
-speed
 
 

@@ -1,0 +1,29 @@
+
+nexus like love happy
+docId: 2 score: 4.77
+docId: 6 score: 2.83
+docId: 1 score: 2.0
+docId: 8 score: 2.0
+docId: 4 score: 1.0
+
+
+0(touch screen) fix repair
+docId: 3 score: 11.57
+docId: 8 score: 4.0
+
+1(great tablet) 2(tablet fast)
+no match
+
+tablet
+docId: 4 score: 1.35
+docId: 2 score: 1.0
+docId: 3 score: 1.0
+docId: 6 score: 1.0
+docId: 9 score: 1.0
+docId: 10 score: 1.0
+
+charger 2(nexus tablet)
+no match
+
+2(nexus tablet) charger
+ no match
